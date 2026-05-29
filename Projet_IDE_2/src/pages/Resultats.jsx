@@ -62,7 +62,7 @@ export default function Resultats() {
               {statsCalculees.mention}
             </h1>
 
-            <p style={styles.pseudo}>Joueur : <strong style={{ color: '#a78bfa' }}>{pseudo}</strong></p>
+            <p style={styles.pseudo}>Joueur : <strong style={{ color: '#bef264' }}>{pseudo}</strong></p>
 
             {/* Score principal */}
             <div style={styles.scoreGrand}>
@@ -128,8 +128,8 @@ function getMention(score, total) {
 }
 
 // ── Thèmes ────────────────────────────────────────────────────
-const darkTheme  = { bg: '#0a0a0f', card: '#111120', text: '#f0f0f0', border: '#2a2a4a' }
-const lightTheme = { bg: '#f5f5ff', card: '#ffffff', text: '#111120', border: '#d0d0f0' }
+const darkTheme  = { bg: '#070907', card: 'rgba(14, 18, 11, 0.94)', text: '#f8fafc', border: 'rgba(133, 167, 45, 0.24)' }
+const lightTheme = { bg: '#f7fbea', card: '#f8fdf3', text: '#111827', border: '#d9f99d' }
 
 // ── Styles ────────────────────────────────────────────────────
 const styles = {
@@ -149,35 +149,37 @@ const styles = {
   themeBtn: {
     background: 'transparent',
     border: '1px solid',
-    borderRadius: '6px',
-    padding: '4px 14px',
+    borderRadius: '8px',
+    padding: '6px 16px',
     fontFamily: "'Space Mono', monospace",
-    fontSize: '0.7rem',
+    fontSize: '0.75rem',
     cursor: 'pointer',
+    color: 'inherit',
   },
   card: {
     border: '1px solid',
-    borderRadius: '16px',
+    borderRadius: '24px',
     padding: '2.5rem 2rem',
     width: '100%',
     display: 'flex',
     flexDirection: 'column',
-    gap: '1.25rem',
+    gap: '1.5rem',
     alignItems: 'center',
     textAlign: 'center',
     transition: 'background 0.3s',
+    boxShadow: '0 28px 80px rgba(19, 38, 10, 0.22)',
   },
   trophee: { fontSize: '3rem' },
   titre: {
     fontFamily: "'Syne', sans-serif",
     fontWeight: 800,
-    fontSize: '1.6rem',
+    fontSize: '1.75rem',
     letterSpacing: '-0.02em',
   },
   pseudo: {
     fontFamily: "'Space Mono', monospace",
-    fontSize: '0.75rem',
-    color: '#888',
+    fontSize: '0.78rem',
+    color: '#a3b23b',
   },
   scoreGrand: {
     display: 'flex',
@@ -188,32 +190,32 @@ const styles = {
     fontFamily: "'Syne', sans-serif",
     fontWeight: 800,
     fontSize: '4rem',
-    color: '#a78bfa',
+    color: '#bef264',
     lineHeight: 1,
   },
   scoreSep: {
     fontFamily: "'Syne', sans-serif",
     fontSize: '2rem',
-    color: '#444',
+    color: '#6b7280',
   },
   scoreTotal: {
     fontFamily: "'Syne', sans-serif",
     fontSize: '2rem',
-    color: '#555',
+    color: '#6b7280',
   },
   ratioBox: {
-    background: 'rgba(124,58,237,0.1)',
-    border: '1px solid rgba(124,58,237,0.3)',
-    borderRadius: '8px',
-    padding: '0.75rem 2rem',
+    background: 'rgba(190, 242, 100, 0.12)',
+    border: '1px solid rgba(190, 242, 100, 0.3)',
+    borderRadius: '12px',
+    padding: '0.95rem 2rem',
     display: 'flex',
     flexDirection: 'column',
-    gap: '2px',
+    gap: '4px',
   },
   ratioLabel: {
     fontFamily: "'Space Mono', monospace",
-    fontSize: '0.6rem',
-    color: '#a78bfa',
+    fontSize: '0.65rem',
+    color: '#a3e635',
     textTransform: 'uppercase',
     letterSpacing: '0.1em',
   },
@@ -221,35 +223,35 @@ const styles = {
     fontFamily: "'Syne', sans-serif",
     fontWeight: 800,
     fontSize: '2rem',
-    color: '#fff',
+    color: 'inherit',
   },
   details: {
     width: '100%',
     display: 'flex',
     flexDirection: 'column',
-    gap: '0.5rem',
+    gap: '0.65rem',
   },
   statRow: {
     display: 'flex',
     justifyContent: 'space-between',
-    padding: '0.5rem 0',
-    borderBottom: '1px solid #1e1e35',
+    padding: '0.75rem 0',
+    borderBottom: '1px solid rgba(255, 255, 255, 0.08)',
   },
   statLabel: {
     fontFamily: "'Space Mono', monospace",
     fontSize: '0.72rem',
-    color: '#888',
+    color: '#9ca3af',
   },
   statValue: {
     fontFamily: "'Syne', sans-serif",
     fontWeight: 700,
     fontSize: '1rem',
   },
-  divider: { height: '1px', background: '#1e1e35', width: '100%' },
+  divider: { height: '1px', background: 'rgba(255, 255, 255, 0.08)', width: '100%' },
   note: {
     fontFamily: "'Space Mono', monospace",
     fontSize: '0.65rem',
-    color: '#555',
+    color: '#9ca3af',
     lineHeight: 1.6,
     textAlign: 'left',
   },
@@ -260,26 +262,26 @@ const styles = {
   },
   btnPrimary: {
     flex: 1,
-    background: '#7c3aed',
-    color: '#fff',
+    background: '#bef264',
+    color: '#08100b',
     border: 'none',
-    borderRadius: '8px',
-    padding: '0.8rem',
+    borderRadius: '12px',
+    padding: '0.92rem',
     fontFamily: "'Syne', sans-serif",
     fontWeight: 700,
-    fontSize: '0.9rem',
+    fontSize: '0.95rem',
     cursor: 'pointer',
   },
   btnSecondary: {
     flex: 1,
     background: 'transparent',
-    color: '#a78bfa',
-    border: '1px solid #a78bfa',
-    borderRadius: '8px',
-    padding: '0.8rem',
+    color: '#bef264',
+    border: '1px solid #bef264',
+    borderRadius: '12px',
+    padding: '0.92rem',
     fontFamily: "'Syne', sans-serif",
     fontWeight: 700,
-    fontSize: '0.9rem',
+    fontSize: '0.95rem',
     cursor: 'pointer',
   },
 }

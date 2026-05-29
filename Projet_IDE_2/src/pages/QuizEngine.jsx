@@ -100,7 +100,7 @@ export default function QuizEngine() {
   }
 
   // Couleur du timer selon le temps restant
-  const timerColor = timer > 30 ? '#4ade80' : timer > 10 ? '#f7c948' : '#f87171'
+  const timerColor = timer > 30 ? '#bef264' : timer > 10 ? '#f7c948' : '#f87171'
 
   // ── Rendus conditionnels ──────────────────────────────────────
   if (loading) return <Loader />
@@ -136,7 +136,7 @@ export default function QuizEngine() {
 
             <div style={styles.scoreBox}>
               <span style={styles.timerLabel}>SCORE</span>
-              <span style={{ ...styles.timerValue, color: '#a78bfa' }}>{score}</span>
+              <span style={{ ...styles.timerValue, color: '#bef264' }}>{score}</span>
             </div>
           </div>
 
@@ -187,7 +187,7 @@ function useTimerState(initial) {
 function Loader() {
   return (
     <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '80vh' }}>
-      <p style={{ fontFamily: "'Space Mono', monospace", color: '#a78bfa', fontSize: '0.9rem' }}>
+      <p style={{ fontFamily: "'Space Mono', monospace", color: '#bef264', fontSize: '0.9rem' }}>
         Chargement des questions…
       </p>
     </div>
@@ -252,21 +252,21 @@ const styles = {
   },
   progressBar: {
     width: '100%',
-    height: '6px',
-    background: '#1e1e35',
+    height: '8px',
+    background: 'rgba(103, 116, 38, 0.18)',
     borderRadius: '999px',
     overflow: 'hidden',
   },
   progressFill: {
     height: '100%',
-    background: '#7c3aed',
+    background: 'linear-gradient(135deg, #bef264, #4d7c0f)',
     borderRadius: '999px',
     transition: 'width 0.3s ease',
   },
   progressLabel: {
     fontFamily: "'Space Mono', monospace",
     fontSize: '0.65rem',
-    color: '#555',
+    color: '#94a64a',
   },
   scoreBox: {
     display: 'flex',
@@ -275,21 +275,22 @@ const styles = {
     gap: '2px',
   },
   card: {
-    background: '#111120',
-    border: '1px solid #2a2a4a',
-    borderRadius: '12px',
+    background: 'rgba(10, 17, 12, 0.98)',
+    border: '1px solid rgba(133, 167, 45, 0.22)',
+    borderRadius: '18px',
     padding: '2rem',
     display: 'flex',
     flexDirection: 'column',
     gap: '1.5rem',
+    boxShadow: '0 24px 70px rgba(0, 0, 0, 0.28)',
   },
   categorie: {
     fontFamily: "'Space Mono', monospace",
     fontSize: '0.65rem',
-    color: '#a78bfa',
+    color: '#d9f99d',
     textTransform: 'uppercase',
     letterSpacing: '0.1em',
-    border: '1px solid #2a2a5a',
+    border: '1px solid rgba(133, 167, 45, 0.28)',
     borderRadius: '999px',
     padding: '3px 12px',
     alignSelf: 'flex-start',
@@ -297,51 +298,51 @@ const styles = {
   question: {
     fontFamily: "'Syne', sans-serif",
     fontWeight: 700,
-    fontSize: '1.15rem',
-    color: '#f0f0f0',
-    lineHeight: 1.5,
+    fontSize: '1.25rem',
+    color: '#f8fafc',
+    lineHeight: 1.6,
   },
   options: {
     display: 'flex',
     flexDirection: 'column',
-    gap: '0.75rem',
+    gap: '0.85rem',
   },
   optBtn: {
     display: 'flex',
     alignItems: 'center',
     gap: '1rem',
-    background: '#0a0a0f',
-    border: '1px solid #2a2a4a',
-    borderRadius: '8px',
-    padding: '0.85rem 1rem',
-    color: '#ddd',
+    background: '#08110b',
+    border: '1px solid rgba(133, 167, 45, 0.18)',
+    borderRadius: '12px',
+    padding: '0.95rem 1rem',
+    color: '#e2e8f0',
     fontFamily: "'Space Mono', monospace",
-    fontSize: '0.8rem',
+    fontSize: '0.9rem',
     cursor: 'pointer',
     textAlign: 'left',
-    transition: 'border-color 0.15s',
+    transition: 'border-color 0.15s, transform 0.15s',
   },
   optLetter: {
-    width: '26px',
-    height: '26px',
+    width: '28px',
+    height: '28px',
     borderRadius: '50%',
-    background: '#1e1e35',
-    color: '#a78bfa',
+    background: '#15270e',
+    color: '#bef264',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
     fontWeight: 700,
-    fontSize: '0.7rem',
+    fontSize: '0.75rem',
     flexShrink: 0,
   },
   abandonBtn: {
     background: 'transparent',
-    border: '1px solid #333',
-    color: '#555',
-    borderRadius: '8px',
-    padding: '0.65rem',
+    border: '1px solid rgba(133, 167, 45, 0.24)',
+    color: '#94a64a',
+    borderRadius: '10px',
+    padding: '0.75rem',
     fontFamily: "'Space Mono', monospace",
-    fontSize: '0.7rem',
+    fontSize: '0.75rem',
     cursor: 'pointer',
     width: '100%',
   },

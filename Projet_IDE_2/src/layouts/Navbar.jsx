@@ -8,7 +8,7 @@ export default function Navbar() {
     <nav style={styles.nav}>
       <div style={styles.inner}>
         <Link to="/" style={styles.logo}>
-          <span style={styles.accent}>Poly</span>Quiz
+          <span style={styles.accent}>Quiz</span>
         </Link>
 
         {pseudo && (
@@ -31,8 +31,8 @@ export default function Navbar() {
 
 const styles = {
   nav: {
-    background: '#0f0f1a',
-    borderBottom: '2px solid #7c3aed',
+    background: '#08100b',
+    borderBottom: '2px solid #a3e635',
     padding: '0 2rem',
     height: '60px',
     display: 'flex',
@@ -55,7 +55,7 @@ const styles = {
     textDecoration: 'none',
     letterSpacing: '-0.02em',
   },
-  accent: { color: '#a78bfa' },
+  accent: { color: '#bef264' },
   right: {
     display: 'flex',
     alignItems: 'center',
@@ -64,12 +64,12 @@ const styles = {
   info: {
     fontFamily: "'Space Mono', monospace",
     fontSize: '0.72rem',
-    color: '#aaa',
+    color: '#cbd5e1',
   },
   btn: {
     background: 'transparent',
-    border: '1px solid #444',
-    color: '#aaa',
+    border: '1px solid #394a0e',
+    color: '#cbd5e1',
     borderRadius: '6px',
     padding: '4px 12px',
     fontFamily: "'Space Mono', monospace",
