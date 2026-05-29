@@ -30,12 +30,12 @@ export default function Accueil() {
         <div style={styles.card}>
 
           {/* Logo / Titre */}
-          <div style={styles.badge}>QUIZ ARENA</div>
+          <div style={styles.badge}>MKR_fire</div>
           <h1 style={styles.title}>
-            <span style={styles.accent}>Quiz</span>
+            <span style={styles.accent}>Jugement</span>
           </h1>
           <p style={styles.subtitle}>
-            Culture générale revisitée en mode express
+            Dévoile ton côté obscure
           </p>
 
           {/* Catégories */}

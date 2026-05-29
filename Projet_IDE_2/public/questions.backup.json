@@ -2,70 +2,70 @@
   {
     "id": 1,
     "categorie": "Formule 1",
-    "libelle": "Quelle présence noire te suit au ralenti, avalant la lueur des rétros sans un bruit ?",
-    "options": ["Ton vieux moteur", "Ton ombre", "Le vent", "Le stand silencieux"],
+    "libelle": "Qu'est-ce qui te suit partout, silencieux et sans vie, murmurant aux talons ?",
+    "options": ["Ton cauchemar", "Ton ombre", "La pluie nocturne", "Un fantôme de podium"],
     "bonne_reponse": "Ton ombre"
   },
   {
     "id": 2,
     "categorie": "Formule 1",
-    "libelle": "Sur quel circuit princier les rues se transforment-elles en labyrinthe de murmures ?",
+    "libelle": "Sur quel ruban d'asphalte tortueux se faufile le bal des monarques ?",
     "options": ["Circuit de la Sarthe", "Circuit de Monte-Carlo", "Circuit de Spa", "Autodromo Nazionale Monza"],
     "bonne_reponse": "Circuit de Monte-Carlo"
   },
   {
     "id": 3,
     "categorie": "MotoGP",
-    "libelle": "Quel pilote porte encore l'écho d'un surnom ancien, comme une relique ?",
+    "libelle": "Quel pilote, chanté par la foule, porte encore le masque du 'Dottore' ?",
     "options": ["Marc Márquez", "Valentino Rossi", "Jorge Lorenzo", "Dani Pedrosa"],
     "bonne_reponse": "Valentino Rossi"
   },
   {
     "id": 4,
     "categorie": "MotoGP",
-    "libelle": "Combien de battements métalliques exhalent la bête qui règne sur la piste ?",
+    "libelle": "Combien de battements — dits cylindres — grondent dans une reine MotoGP ?",
     "options": ["2 cylindres", "3 cylindres", "4 cylindres", "6 cylindres"],
     "bonne_reponse": "4 cylindres"
   },
   {
     "id": 5,
     "categorie": "NBA",
-    "libelle": "Quelle dynastie a gravé ses anneaux dans la pierre des saisons ?",
+    "libelle": "Quelle légende a amassé le plus de trophées, ses chansons résonnant dans les arènes ?",
     "options": ["Los Angeles Lakers", "Chicago Bulls", "Boston Celtics", "Golden State Warriors"],
     "bonne_reponse": "Boston Celtics"
   },
   {
     "id": 6,
     "categorie": "NBA",
-    "libelle": "Qui, des géants du panier, a inscrit le plus de runes numériques au fil des années ?",
+    "libelle": "Quel colosse des paniers a gravé le plus de points dans les étoiles de l'histoire ?",
     "options": ["Michael Jordan", "Kobe Bryant", "LeBron James", "Kareem Abdul-Jabbar"],
     "bonne_reponse": "LeBron James"
   },
   {
     "id": 7,
     "categorie": "NBA",
-    "libelle": "À quelle altitude le cercle trône-t-il, gardien des ombres qui rebondissent ?",
+    "libelle": "À quelle hauteur le cercle doré suspend son trône dans les temples du dribble ?",
     "options": ["2,80 m", "3,05 m", "3,20 m", "3,50 m"],
     "bonne_reponse": "3,05 m"
   },
   {
     "id": 8,
     "categorie": "Manga / Anime",
-    "libelle": "Quel jeune paria porte en lui le rêve d'un village et une spirale de feu ?",
+    "libelle": "Quel héros turbulent rêve de devenir Hokage et brandit un sourire jaune comme le soleil couchant ?",
     "options": ["Sasuke Uchiha", "Naruto Uzumaki", "Kakashi Hatake", "Itachi Uchiha"],
     "bonne_reponse": "Naruto Uzumaki"
   },
   {
     "id": 9,
     "categorie": "Manga / Anime",
-    "libelle": "Quel atelier a façonné le géant qui hiberne sous les ifs ?",
+    "libelle": "Dans quelle forge de rêves a pris vie le doux géant Totoro ?",
     "options": ["Toei Animation", "Bones", "Studio Ghibli", "Madhouse"],
     "bonne_reponse": "Studio Ghibli"
   },
   {
     "id": 10,
     "categorie": "Manga / Anime",
-    "libelle": "Quel forgeron de mondes a forgé les orbes et la légende de combats célestes ?",
+    "libelle": "Quel maître des combats a donné naissance à 'Dragon Ball' et à ses sphères enchantées ?",
     "options": ["Eiichiro Oda", "Masashi Kishimoto", "Akira Toriyama", "Hajime Isayama"],
     "bonne_reponse": "Akira Toriyama"
   }

@@ -8,7 +8,7 @@ export default function Navbar() {
     <nav style={styles.nav}>
       <div style={styles.inner}>
         <Link to="/" style={styles.logo}>
-          <span style={styles.accent}>Quiz</span>
+          <span style={styles.accent}>Quiz de la mort</span>
         </Link>
 
         {pseudo && (
