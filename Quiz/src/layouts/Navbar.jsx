@@ -10,7 +10,9 @@ export default function Navbar() {
         <Link to="/" style={styles.logo}>
           <span style={styles.accent}>Quiz de la mort</span>
         </Link>
-
+        <Link to ="/leaderboard" style={styles.logo}>
+          Leaderboard
+        </Link>
         {pseudo && (
           <div style={styles.right}>
             <span style={styles.info}>

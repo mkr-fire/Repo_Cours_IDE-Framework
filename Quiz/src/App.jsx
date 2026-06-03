@@ -4,6 +4,7 @@ import ProtectedRoute from './components/ProtectedRoute.jsx'
 import Accueil from './pages/Accueil.jsx'
 import QuizEngine from './pages/QuizEngine.jsx'
 import Resultats from './pages/Resultats.jsx'
+import Leaderboard from './pages/Leaderboard';
 
 /**
  * App.jsx – Racine de l'application
@@ -39,6 +40,14 @@ export default function App() {
             element={
               <ProtectedRoute>
                 <Resultats />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/leaderboard"
+            element={
+              <ProtectedRoute>
+                <Leaderboard />
               </ProtectedRoute>
             }
           />
